@@ -13,6 +13,7 @@ export class EventBindingComponent implements OnInit {
   btnEnable = true;
   selectDisabled = false;
   selectedOption = 1;
+  inputName = 'john';
 
   constructor() {}
 
@@ -42,5 +43,9 @@ export class EventBindingComponent implements OnInit {
 
   selectionChange(event: any) {
     this.selectedOption = event.value;
+  }
+
+  inputEvent(event: any) {
+    this.inputName = event.target.value;
   }
 }

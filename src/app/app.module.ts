@@ -14,6 +14,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { MatSelectModule } from '@angular/material/select';
     FormsModule,
     MatCheckboxModule,
     MatSelectModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
