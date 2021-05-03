@@ -11,6 +11,8 @@ export class EventBindingComponent implements OnInit {
   i = 0;
   spinnerMode: ProgressSpinnerMode = 'determinate';
   btnEnable = true;
+  selectDisabled = false;
+  selectedOption = 1;
 
   constructor() {}
 
@@ -34,5 +36,11 @@ export class EventBindingComponent implements OnInit {
     }, 3000);
   }
 
-  cbChange() {}
+  cbChange(event: any) {
+    this.selectDisabled = event.checked;
+  }
+
+  selectionChange(event: any) {
+    this.selectedOption = event.value;
+  }
 }
