@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDividerModule } from '@angular/material/divider';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MatDividerModule } from '@angular/material/divider';
     StringInterpolationComponent,
     PropertyBindingComponent,
     EventBindingComponent,
+    TwoWayDataBindingComponent,
   ],
   imports: [
     BrowserModule,
